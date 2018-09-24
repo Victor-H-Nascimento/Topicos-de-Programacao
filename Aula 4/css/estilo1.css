@@ -1,0 +1,140 @@
+h1{
+	font-family: 'Bangers', cursive;
+	font-size: 24px;
+}
+
+h3{
+font-family: 'Bangers', cursive;
+font-size: 18px;
+}
+
+.formulario{
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 16px;
+	color: #003368;
+}
+
+.dadosPessoais{
+    background-color: rgb(245, 241, 212);
+    padding: 0.5%;
+    width: 15%;
+    margin-top: 0.4%; 
+    display: inline-block;
+}
+
+.dadosRedes{
+	position: absolute;
+    background-color: rgb(245, 241, 212);
+    padding: 0.5%;
+    padding-top: 3.4%;
+	padding-bottom:3.4%;
+    width: 15%;
+    margin-top: 0.4%; 
+    display: inline-block;
+}
+
+.dadosObjetivo{
+    background-color: rgb(245, 241, 212);
+	padding: 0.5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+    width: 15%;
+    margin-top: 0.4%; 
+    display: inline-block;
+}
+
+.dadosLinguagens{
+	position: absolute;
+    background-color: rgb(245, 241, 212);
+	padding: 0.5%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+    width: 15%;
+    margin-top: 0.4%; 
+    display: inline-block;
+    
+}
+
+
+.bordaForm{
+    background-color: #a2e5a6;
+    position: relative;
+    padding: 0.4%;   
+    width: 25%;
+    margin-top: 0.4%; 
+    display: inline-block;
+}
+
+
+
+.bordaFormRedes{
+	margin-left:16.5%;
+    background-color: #a2e5a6;
+    position: relative;
+    padding: 0.4%;   
+    width: 25%;
+    margin-top: 0.4%; 
+    display: inline-block;
+}
+
+input:required:invalid, input:focus:invalid, textarea:required:invalid, textarea:focus:invalid {
+
+ background-image: url(../imagens/wrong.gif);
+ background-position: 98%;
+ background-repeat: no-repeat;
+
+}
+
+
+input:required:valid,textarea:required:valid {
+ background-image: url(../imagens/check.png);
+ background-position: 98%;
+ background-repeat: no-repeat;
+}
+
+
+.botoes{
+	color: darkred;
+	background-color: transparent;
+	border-width:0.5%;
+	border-radius: 2em;
+	border-style:solid;
+	text-transform:uppercase;
+	font-weight:bolder;
+	max-width:20%;
+	max-height:20%;
+	min-width:5%;
+	min-height:5%;
+}
+
+#botaoReset
+{
+	margin-left:3%;
+}
+
+.grow
+{
+	-webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+		
+		transition: -webkit-transform 0.5s;
+		transition: -ms-transform 0.5s;
+		transition: transform 0.5s;
+		
+}
+
+.grow:hover
+{
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+		
+}
+
+
+
+.botoes:hover{
+	color:white;
+	background-color:darkred;
+}

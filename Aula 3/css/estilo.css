@@ -1,0 +1,88 @@
+h2,h3{
+	font-family: Baskerville,Arial Narrow, sans-serif;
+	color:green;
+	
+}
+
+p{
+	font-family: Bodoni,Arial Narrow, sans-serif;
+	color:black;
+}
+
+
+
+figure.posiciona-foto{
+	position: relative;
+	right: 45px;
+	bottom:80px;
+	max-width: 30%;
+	min-width: 30%;
+	float: left;
+}
+
+figure.santos{
+	max-width: 100%;
+	min-width: 100%;
+}
+
+figure.imgB99{
+	max-width: 50%;
+	min-width: 50%;
+	float: left;
+}
+
+
+.formataTitulos{
+	font-family: Arial Narrow, sans-serif;
+	font-size: 1.2em;
+	color:blue;
+}
+
+.formataDados{
+	font-family: Apple Chancery, cursive;
+	font-size:1em;
+	color:red;
+}
+
+
+
+a.link-detalhe{
+	position:relative;
+	float: right;
+	bottom: 60px;
+}
+
+
+
+.detalhesPerfil{
+    background-image: -webkit-linear-gradient(#F4A460,#ADFF2F 60%); 
+}
+
+.detalhesBackground{
+    background-image: -webkit-linear-gradient(#00BFFF,#7FFFD4 60%); 
+}
+
+.nome_perfil{
+	text-align: justify;
+}
+
+img { 
+	max-width: 100%;
+	min-width: 100%;
+}
+
+img.imgSantos{
+	max-width: 30%;
+	min-width: 30%;
+}
+
+img.foto_perfil { 
+	max-width: 70%;
+	min-width: 70%;
+	max-height: 100%;
+	min-height: 100%;
+}
+
+#b99radius{
+	border-radius: 20px;
+}

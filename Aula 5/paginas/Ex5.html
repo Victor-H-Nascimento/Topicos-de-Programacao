@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+        <title> Formulario com JS </title>
+		<link rel="stylesheet" type="text/css" href="../css/estilo1.css">
+		<script type="text/javascript" src="../js/javascript5.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	</head>
+	
+	<body>
+	
+		<header> <!-- Cabecalho-->
+			
+			<h1>Cadastre seu currículo</h1>
+			
+		</header>
+		
+		
+		<div class="formulario">
+			
+		
+			<form name="form1" autocomplete="off" action="salvarDados" method="post"> 
+
+				<div >
+
+					<h3>1. Dados Pessoais</h3>
+
+					<div>
+
+						<div class="dadosPessoais">Nome:</div> <div class="bordaForm"><input type="text" name="nome" size="45" required placeholder="Digite seu nome" /></div><br>
+						<div class="dadosPessoais">Data de Nascimento:</div> <div class="bordaForm"><input type="date" name="dataNascimento" /></div><br>
+						
+						<div class="dadosPessoais">Estado Civil:</div>
+						<div class="bordaForm">
+						<select name="estadoCivil">
+							<option selected value="invalido">Selecione o estado civil </option>						<option value="casado">Casado</option>
+							<option value="divorciado">Divorciado</option>
+							<option value="solteiro">Solteiro</option>
+							<option value="viuvo">Viuvo</option>
+						</select>
+						<span id="fraseSelecaoEstado"></span>	
+						</div>
+						<br>
+						
+
+						<div class="dadosPessoais">Sexo:</div>
+						<div class="bordaForm">
+						<input type="radio" name="sexo" value="male" />Masculino &nbsp;
+						<input type="radio" name="sexo" value="female" />Feminino
+						</div><br> 
+
+					</div> 
+
+				</div>
+
+				<div>
+
+					<h3>2. Objetivo</h3>
+
+					<div class="dadosObjetivo">Objetivo:</div> <div class="bordaForm"><textarea name="objetivo"  cols="40" rows="2" placeholder="Digite seu objetivo" required></textarea></div>
+
+
+				</div>
+				
+				
+				<div>
+
+					<h3>3. Contato</h3>
+
+					<div class="dadosPessoais">Endereço:</div> <div class="bordaForm"><input type="text" name="endereço" size="45" required placeholder="Digite seu endereço" /></div><br>
+					
+					<div class="dadosPessoais">Cidade/Estado:</div>
+					<div class="bordaForm">
+						<input type="text" name="cidade" required placeholder="Digite sua cidade" />&nbsp;/&nbsp;
+						<input type="text" name="estado" required placeholder="Digite seu estado" />
+					</div><br>
+
+					<div class="dadosPessoais">CEP:</div>
+					<div class="bordaForm"><input type="text" name="cep" size="45" required pattern="[0-9]{5}[\-][0-9]{3}" placeholder="Digite seu CEP no formato 99999-999" /></div><br>
+
+					<div class="dadosPessoais">Telefone:</div>
+					<div class="bordaForm"><input type="tel"  name="tel" size="45" pattern="[\(][0-9]{2}[\)][\s][0-9]{4}[\-][0-9]{4}" 
+					placeholder="Digite seu CEP no formato (99) 9999-9999"/></div><br>
+				
+					<div class="dadosPessoais">E-mail:</div> <div class="bordaForm"><input type="e-mail" name="email" size="45" placeholder="Digite seu e-mail"/></div><br>
+
+					<div class="dadosRedes">Redes Socias:</div>
+					<div class="bordaFormRedes"> <img class="imgSociais" src="../imagens/face.png"/> http://facebook.com/ &nbsp; <input type="url" name="facebook"  placeholder="Perfil facebook"/><br>
+					<img class="imgSociais" src="../imagens/linkedin.png"/> http://linkedin.com/ &nbsp; <input type="url" name="linkedin" placeholder="Perfil linkedin"/><br>
+					<img class="imgSociais" src="../imagens/skype.png"/> <input type="url" name="skype" placeholder="Perfil Skype"/></div><br>
+
+
+
+
+				</div>
+				
+				<div>
+
+					<h3>4. Conhecimentos</h3>
+
+					<div class="dadosLinguagens">Linguagens de Programação:<br></div> 
+
+					<div class="bordaFormRedes">
+						<input type="checkbox" name="conhecimento" value="c/c++" />C/C++<br>
+						<input type="checkbox" name="conhecimento" value="java" />Java<br>
+						<input type="checkbox" name="conhecimento" value="visual basic" />Visual Basic<br>
+						<input type="checkbox" name="conhecimento" value=".net" />.Net<br>
+						<input type="checkbox" name="conhecimento" value="php" />PHP<br>
+						<input type="checkbox" name="conhecimento" value="python" />Python<br>
+						<input type="checkbox" name="conhecimento" value="html" />HTML<br>
+					</div><br>
+
+
+					<div class="dadosPessoais">Idiomas:</div><br>
+
+					<div class="dadosPessoais">Inglês</div>
+						<div class="bordaForm">
+							<select name="fluenciaIngles">
+								<option selected value="invalido">Nível</option>
+								<option value="bas">Básico</option>
+								<option value="int">Intermediário</option>
+								<option value="ava">Avançado</option>
+							</select>
+						</div><br>
+
+					<div class="dadosPessoais">Espanhol</div>
+						<div class="bordaForm">
+							<select name="fluenciaEspanhol">
+								<option selected value="invalido">Nível</option>
+								<option value="bas">Básico</option>
+								<option value="int">Intermediário</option>
+								<option value="ava">Avançado</option>
+							</select>
+						</div>
+				</div>
+				
+				<div>
+				
+				<input class="botoes grow" id="botaoReset" type="button" value="Limpar" onClick="confirmaLimpar();"/> | 
+				<input class="botoes grow" type="button" value="Enviar" onClick="confirmaEnviar();"/> 
+				
+				</div>
+
+
+
+
+			</form>	
+				
+		
+		</div>
+		
+		
+	
+	
+	
+	</body>
+
+</html>
